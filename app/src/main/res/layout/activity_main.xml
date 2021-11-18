@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#92F44336">
+
+    <TextView
+        android:id="@+id/tv_song"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ten bai hat "
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/image_pre"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sb"
+        android:layout_marginTop="40dp"
+        android:background="#BFFF5722"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/pre_skip">
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/image_play"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sb"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="35dp"
+        android:background="#BFFF5722"
+        android:layout_toRightOf="@+id/image_pre"
+        android:src="@drawable/play_s">
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/image_pause"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sb"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="35dp"
+        android:background="#BFFF5722"
+        android:layout_toRightOf="@+id/image_play"
+        android:src="@drawable/pause_s">
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/image_next"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sb"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="35dp"
+        android:background="#BFFF5722"
+        android:layout_toRightOf="@+id/image_pause"
+        android:src="@drawable/skip_next">
+    </ImageButton>
+
+    <SeekBar
+        android:id="@+id/sb"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+         />
+
+    <TextView
+        android:id="@+id/tv_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:text="00:00"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:text="00:00"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="210dp"
+        android:layout_height="194dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/disc" />
+</RelativeLayout>
